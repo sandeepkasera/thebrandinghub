@@ -30,20 +30,20 @@ export default function App() {
       <Navbar />
       <Banner />
 
-      <section id="reels" className="container mx-auto px-6 py-16">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
+      <section id="reels" className="container mx-auto px-4 py-14 sm:px-6 sm:py-16">
+        <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-2xl">
             <p className="text-sm uppercase tracking-[0.35em] text-amber-700">Featured Content</p>
             <h2 className="mt-3 text-3xl font-semibold text-slate-900 sm:text-4xl">
               Instagram Reels that boost engagement and brand recall
             </h2>
           </div>
           <p className="max-w-xl text-slate-600">
-            Click any reel card to preview a showcase video and learn how our service packages help your business stand out.
+            Tap any reel to open it directly on Instagram and see how our content drives awareness and conversion.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-2">
           {reels.map((reel) => (
             <ReelCard key={reel.id} reel={reel} />
           ))}

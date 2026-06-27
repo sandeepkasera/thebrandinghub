@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="container mx-auto px-6 py-20">
+    <section id="contact" className="container mx-auto px-4 py-16 sm:px-6 sm:py-20">
       <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="rounded-[2rem] bg-white p-10 shadow-2xl">
+        <div className="rounded-[2rem] bg-white p-6 shadow-2xl sm:p-10">
           <p className="text-sm uppercase tracking-[0.35em] text-amber-600">Let’s collaborate</p>
           <h2 className="mt-4 text-3xl font-semibold text-slate-900">Ready to launch your next campaign?</h2>
           <p className="mt-4 text-slate-600">
@@ -20,7 +20,7 @@ export default function Contact() {
             <label className="block text-sm font-medium text-slate-700">Message</label>
             <textarea className="min-h-[140px] w-full rounded-3xl border border-slate-200 bg-slate-50 p-5 text-slate-900 outline-none transition focus:border-amber-500 focus:ring-2 focus:ring-amber-100" placeholder="Tell us about your goals" />
 
-            <button className="inline-flex rounded-full bg-amber-500 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-amber-300/30 transition hover:bg-amber-600" type="submit">
+            <button className="inline-flex w-full justify-center rounded-full bg-amber-500 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-amber-300/30 transition hover:bg-amber-600 sm:w-auto" type="submit">
               Send Message
             </button>
           </form>

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-md shadow-sm">
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+      <div className="container mx-auto flex flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
         <a href="#top" className="flex items-center gap-3 text-slate-900">
           <img src="/images/logo.jpeg" alt="The Branding Hub logo" className="h-12 w-12 rounded-full border-2 border-amber-500 object-cover shadow-md" />
           <div>
@@ -12,7 +12,7 @@ export default function Navbar() {
           </div>
         </a>
 
-        <nav className="flex items-center gap-6 text-sm text-slate-600">
+        <nav className="flex flex-wrap justify-center gap-4 text-sm text-slate-600 sm:justify-end">
           <a href="#services" className="transition hover:text-slate-900">Services</a>
           <a href="#reels" className="transition hover:text-slate-900">Reels</a>
           <a href="#contact" className="transition hover:text-slate-900">Contact</a>
