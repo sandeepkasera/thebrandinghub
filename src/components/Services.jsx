@@ -27,13 +27,10 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <div key={index} className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl transition hover:-translate-y-1 hover:border-amber-300/30">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-500/15 text-amber-300">
-                {index + 1}
-              </div>
-              <p className="mt-5 text-sm leading-7 text-slate-100">{service}</p>
+            <div key={index} className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-xl transition hover:-translate-y-1 hover:border-amber-300/30">
+              <p className="text-sm leading-6 text-slate-100">{service}</p>
             </div>
           ))}
         </div>
